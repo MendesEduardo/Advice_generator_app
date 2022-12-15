@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: #17212f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #293848;
+    max-width: 500px;
+    margin: 10em auto;
+    padding: 0.1em 1em;
+    border-radius: 0.7em;
+}
+
+section {
+    text-align: center;
+}
+
+section #adviceNumber {
+    color: #52ffa8;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section #advice {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.bnt-pulse {
+    background-image: url('./images/icon-dice.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    background-color: #52ffa8;
+    border: none;
+    border-radius: 2em;
+}
+
+.bnt-pulse:hover{
+  transform: scale(1.1);
+  box-shadow: 0em 0em 2em #52ffa8;
+}
+
+.bnt-pulse{
+  transition: transform 0.3s;
+  transition: box-shadow 0.2s;
+}
+
+.imagem_mobile
+{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 340px;
+    }
+    .imagem_mobile
+    {
+        margin: 0 auto;
+        display: block;
+    }
+    .imagem_desktop{
+        display: none;
+    }
+}
